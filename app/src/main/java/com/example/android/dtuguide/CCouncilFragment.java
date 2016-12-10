@@ -15,7 +15,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 
-
 public class CCouncilFragment extends Fragment {
 
 
@@ -38,8 +37,26 @@ public class CCouncilFragment extends Fragment {
         webView.setWebViewClient(new MyBrowser());
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setDomStorageEnabled(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.loadUrl(url);
+//        webView.loadUrl(url);
+        webView.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                webView.loadUrl(url);
+            }
+        }, 500);
+
+
+//        new Thread(new Runnable() {
+//            public void run() {
+//
+//            }
+//        }).start();
+
+
+
 
 
 

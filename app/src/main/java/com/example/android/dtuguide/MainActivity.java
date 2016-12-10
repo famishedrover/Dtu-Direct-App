@@ -20,8 +20,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.ToxicBakery.viewpager.transforms.CubeOutTransformer;
-
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener  {
     SimpleFragmentPagerAdapter adapter;
@@ -47,6 +45,7 @@ public class MainActivity extends AppCompatActivity
 
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setOffscreenPageLimit(6);
 
         // Create an adapter that knows which fragment should be shown on each page
         adapter = new SimpleFragmentPagerAdapter(this, getSupportFragmentManager());
@@ -54,8 +53,18 @@ public class MainActivity extends AppCompatActivity
         setTitle(adapter.getPageTitle(0));
 
         // Set the adapter onto the view pager
-        viewPager.setAdapter(adapter);
-        viewPager.setPageTransformer(true,new CubeOutTransformer());
+                viewPager.setAdapter(adapter);
+
+
+
+//        new Thread(new Runnable() {
+//            public void run() {
+//              viewPager.setPageTransformer(true,new CubeOutTransformer());;
+//            }
+//        }).start();
+
+
+//        viewPager.setPageTransformer(true,new CubeOutTransformer());
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
