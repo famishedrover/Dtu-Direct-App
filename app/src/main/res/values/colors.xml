@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0f5e55</color>
+    <color name="colorPrimaryDark">#03443f</color>
+    <color name="colorAccent">#e84809</color>
+    <color name="WindowBackground">#ffffff</color>
+    <color name="TextColor">#000000</color>
+    <color name="navStart">#0f5e55</color>
+    <color name="navEnd">#002602</color>
+    <color name="PrimaryLighter">#d9d9d9</color>
+    <color name="StartColor">#636363</color>
+    <color name="tabIndicator">#000000</color>
+    <color name="tan_background">#FFF7DA</color>
+</resources>
