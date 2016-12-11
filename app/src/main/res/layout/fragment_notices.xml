@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.dtuguide.NoticesFragment">
+    tools:context="com.angryziber.android.dtuguide.NoticesFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <android.support.v7.widget.RecyclerView

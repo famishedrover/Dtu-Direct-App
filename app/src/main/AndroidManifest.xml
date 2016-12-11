@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.android.dtuguide">
+    package="com.angryziber.android.dtuguide">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme,android:label">
-        <activity android:name=".splash"
+        <activity android:name="com.angryziber.android.dtuguide.splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.angryziber.android.dtuguide.MainActivity"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -33,49 +33,49 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Contacts"
+            android:name="com.angryziber.android.dtuguide.Contacts"
             android:label="Contacts"
             android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.angryziber.android.dtuguide.MainActivity"
             android:theme="@style/AppTheme.ActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.angryziber.android.dtuguide.MainActivity" />
         </activity>
         <activity
-            android:name=".About_Actitvity"
+            android:name="com.angryziber.android.dtuguide.About_Actitvity"
             android:label="About"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.angryziber.android.dtuguide.MainActivity"
             android:theme="@style/AppTheme.ActionBar"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.angryziber.android.dtuguide.MainActivity" />
         </activity>
-        <activity android:name=".feedbackActivity"
+        <activity android:name="com.angryziber.android.dtuguide.feedbackActivity"
             android:label="Write To Us"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.angryziber.android.dtuguide.MainActivity"
             android:theme="@style/AppTheme.ActionBar"
             android:screenOrientation="portrait"/>
-        <activity android:name=".DevConsole"
+        <activity android:name="com.angryziber.android.dtuguide.DevConsole"
             android:screenOrientation="portrait"/>
-        <activity android:name=".FirebaseDatabaseManager"
+        <activity android:name="com.angryziber.android.dtuguide.FirebaseDatabaseManager"
             android:screenOrientation="portrait"/>
 
-        <service android:name=".MyFirebaseMessagingService"
+        <service android:name="com.angryziber.android.dtuguide.MyFirebaseMessagingService"
             >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".FirebaseIDService">
+        <service android:name="com.angryziber.android.dtuguide.FirebaseIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
         <receiver
-            android:name=".NetworkChangeReciever"
+            android:name="com.angryziber.android.dtuguide.NetworkChangeReciever"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
