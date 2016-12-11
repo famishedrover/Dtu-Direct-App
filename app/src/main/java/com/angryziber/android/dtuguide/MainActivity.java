@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
             sendIntent.putExtra(Intent.EXTRA_TEXT,
-                    "Hey check out DTUdirect app at: https://play.google.com/store/apps/details?id=com.example.android.dtuguide");
+                    "Hey check out DTUdirect app at: https://play.google.com/store/apps/details?id=com.angryziber.android.dtudirect");
             sendIntent.setType("text/plain");
             startActivity(sendIntent);
 
